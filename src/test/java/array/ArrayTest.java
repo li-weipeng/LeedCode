@@ -26,4 +26,16 @@ public class ArrayTest {
             System.out.println();
         }
     }
+
+    @Test
+    public void fourSumTest() {
+        FourSum fourSum = new FourSum();
+        List<List<Integer>> res = fourSum.fourSum(new int[]{-1,0,-5,-2,-2,-4,0,1,-2}, -9);
+        for (List<Integer> item : res) {
+            for (Integer val : item) {
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
+    }
 }
